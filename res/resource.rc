@@ -1,0 +1,4 @@
+#include "../include/resource.hpp"
+
+
+BOLD IMAGE "./bold.png"
