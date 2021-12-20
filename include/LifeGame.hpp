@@ -1,4 +1,20 @@
-﻿#ifndef _GAMEOFLIFE_
+﻿/* This is a header for using game of life.
+ * You can include this header. And using some class for game of life.
+ * If you want to use, you can decleare by using namespace GOL
+ * 
+ * The following is a bullet list of how to use.
+ * 1.Create instance of GameLife like "" GOL::GameLife GL= GameLife() "".
+ * 2.Use update() method for update like "" GL.update() "".
+ * 3.Use output() method, you can get updated 2Dvector configurated by int.
+ * 3.or If you want to use this in Command line you can use dispOutput() method. 
+ * over.
+ * 
+ * If you want to set initial conditions, you can use constructa by using prepared 2Dvector contains int.
+ * exp ""GOL::GameLife GL= GameLife(preparedVector)  ""
+ * 
+ */
+
+#ifndef _GAMEOFLIFE_
 #define _GAMEOFLIFE_
 
 #include <vector>
