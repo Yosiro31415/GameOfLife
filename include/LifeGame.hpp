@@ -30,7 +30,6 @@ class GameLife {
     const int height;
     const int width;
 
-protected:
     std::vector<std::vector<CellGoL>> tile = {}; //(y,x)coodinate
     int checkCell(int in_y, int in_x, std::vector<std::vector<CellGoL>>* oldTile);
 
