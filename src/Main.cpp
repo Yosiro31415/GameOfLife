@@ -144,7 +144,6 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPInst, LPSTR pCmd, int cmdShow) {
             DispatchMessageW(&msg);
         } else {
             dmanager->drawBegin();
-            ptrLG.at(0)->update();
             std::vector<std::vector<int>> tile = ptrLG.at(0)->output();
             for (int i = 0; i < tile.size(); i++) {
                 for (int j = 0; j < tile.at(0).size(); j++) {
@@ -156,6 +155,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPInst, LPSTR pCmd, int cmdShow) {
                 }
             }
             dmanager->drawEnd();
+            ptrLG.at(0)->update();
             imanager->inspect();
             if (imanager->getKey(KEY::Z)) {
                 PostQuitMessage(NULL);
