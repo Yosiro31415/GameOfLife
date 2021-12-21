@@ -51,7 +51,6 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPInst, LPSTR pCmd, int cmdShow) {
     WindowSize::height = GetSystemMetrics(SM_CYSCREEN);
     WindowSize::width = GetSystemMetrics(SM_CXSCREEN);
 
-    Deb::cout("hoge");
     // glider gunを並べた盤面の用意
     std::vector<std::vector<int>> board(
         WindowSize::height / cellLength, std::vector<int>(WindowSize::width / cellLength, 0));
